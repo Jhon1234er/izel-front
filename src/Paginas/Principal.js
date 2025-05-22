@@ -1,3 +1,4 @@
+import { TextField } from '@mui/material';
 import '../estilos/Principal.css';
 
 export function Principal() {
@@ -10,7 +11,7 @@ export function Principal() {
 
       <section className="contenido">
         <div className="card">
-          <h2>Agendamiento de citas</h2>
+          <h2    >Agendamiento de citas</h2>
           <p>Consulta disponibilidad y gestiona tus citas fácilmente.</p>
         </div>
         <div className="card">

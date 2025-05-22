@@ -8,6 +8,7 @@ import { RecuperarBasico } from './Paginas/RecuperarBasico';
 import { RecuperarEmailJS } from './Paginas/RecuperarEmailJS';
 import { Piepagina } from './Componentes/Piepagina';
 import './App.css';
+import { NotFound } from './Componentes/NotFound';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/login" element={<IniciarSesion />} />
             <Route path="/recuperar-basico" element={<RecuperarBasico />} />
             <Route path="/recuperar-emailjs" element={<RecuperarEmailJS />} />
+            <Route path='*' element={<NotFound/>}/>
           </Routes>
           <Piepagina />
         </BrowserRouter>

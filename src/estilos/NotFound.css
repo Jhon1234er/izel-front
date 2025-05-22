@@ -1,0 +1,18 @@
+.not-found-container {
+    min-height: 100vh;
+    background-color: #f5f5f5; /* background.default del tema */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .not-found-title {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 2.5rem; /* h1 del tema */
+    font-weight: 700;
+    color: #013857; /* primary.main del tema */
+    line-height: 1.2;
+  }
+  
