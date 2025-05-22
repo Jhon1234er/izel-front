@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ThemeProvider } from '@mui/material/styles';
+import tema from './estilos/Material3';
+import { Encabezado } from './Componentes/Encabezado';
+import { Principal } from './Paginas/Principal';
+import { IniciarSesion } from './Paginas/IniciarSesion';
+import { RecuperarBasico } from './Paginas/RecuperarBasico';
+import { RecuperarEmailJS } from './Paginas/RecuperarEmailJS';
+import { Piepagina } from './Componentes/Piepagina';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={tema}>
+      <div
+        className="App"
+        style={{ display: 'grid', minHeight: '100dvh', gridTemplateRows: 'auto 1fr auto' }}
+      >
+        <BrowserRouter>
+          <Encabezado />
+          <Routes>
+            <Route path="/" element={<Principal />} />
+            <Route path="/login" element={<IniciarSesion />} />
+            <Route path="/recuperar-basico" element={<RecuperarBasico />} />
+            <Route path="/recuperar-emailjs" element={<RecuperarEmailJS />} />
+          </Routes>
+          <Piepagina />
+        </BrowserRouter>
+      </div>
+    </ThemeProvider>
   );
 }
 

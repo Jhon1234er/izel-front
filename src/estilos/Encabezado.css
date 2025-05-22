@@ -1,0 +1,26 @@
+/* src/styles/Header.css */
+.encabezado {
+  background-color: #011f30;
+  color: #ffffff;
+  border-bottom: 4px solid #013857;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.encabezado h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.encabezado nav a {
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.encabezado nav a:hover {
+  color: #A8D8B9; /* Verde menta claro */
+}

@@ -1,0 +1,13 @@
+/* src/styles/Footer.css */
+.pie-pagina {
+  background-color: #013857;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 4px solid #011f30;
+}
+
+.pie-pagina small {
+  color: #dddddd;
+}
